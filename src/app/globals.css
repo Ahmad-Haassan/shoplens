@@ -1,0 +1,123 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+}
+
+:root {
+  /* Warm Premium Aesthetic */
+  --bg-color: #F5F1E8;
+  --card-bg: #FFF9F2;
+  --card-border: rgba(111, 78, 55, 0.1);
+  --primary: #6F4E37;
+  --primary-hover: #5A3E2A;
+  --text-main: #2B2B2B;
+  --text-muted: #6D6D6D;
+  --border-light: rgba(111, 78, 55, 0.15);
+  --success: #4CAF50;
+}
+
+.dark {
+  --bg-color: #1A1817;
+  --card-bg: #23201F;
+  --card-border: rgba(210, 180, 140, 0.1);
+  --primary: #D2B48C;
+  --primary-hover: #E3CDB0;
+  --text-main: #F5F1E8;
+  --text-muted: #A3A3A3;
+  --border-light: rgba(210, 180, 140, 0.15);
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-main);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.glass-card {
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.05);
+  border-radius: 16px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.glass-nav {
+  background: rgba(245, 241, 232, 0.85);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-bottom: 1px solid var(--border-light);
+}
+
+.dark .glass-nav {
+  background: rgba(26, 24, 23, 0.85);
+}
+
+.primary-btn {
+  background: var(--primary);
+  color: white;
+  border-radius: 9999px;
+  padding: 0.75rem 1.5rem;
+  font-weight: 500;
+  transition: all 0.2s ease;
+  box-shadow: 0 4px 12px rgba(111, 78, 55, 0.15);
+}
+
+.primary-btn:hover {
+  background: var(--primary-hover);
+  transform: translateY(-1px);
+  box-shadow: 0 6px 16px rgba(111, 78, 55, 0.25);
+}
+
+.glowing-text {
+  background: linear-gradient(to right, #6F4E37, #A07855);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.8s ease-out forwards;
+}
+
+.animate-slide-up {
+  animation: slideUp 0.8s ease-out forwards;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.bg-grid {
+  background-size: 40px 40px;
+  background-image: linear-gradient(to right, rgba(111, 78, 55, 0.05) 1px, transparent 1px),
+                    linear-gradient(to bottom, rgba(111, 78, 55, 0.05) 1px, transparent 1px);
+  mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
+  -webkit-mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
+}
+
+.dark .bg-grid {
+  background-image: linear-gradient(to right, rgba(210, 180, 140, 0.03) 1px, transparent 1px),
+                    linear-gradient(to bottom, rgba(210, 180, 140, 0.03) 1px, transparent 1px);
+}
+
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+.skeleton {
+  background: linear-gradient(90deg, var(--card-bg) 25%, var(--bg-color) 50%, var(--card-bg) 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+  border-radius: 8px;
+}
