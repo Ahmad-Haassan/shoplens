@@ -107,8 +107,9 @@ npm install
 ```
 
 ### 3. Configure Environment Variables
-Create a `.env.local` file in the root directory:
+Create a `.env.local` file in the root directory (see `.env.example`):
 ```bash
+NEXT_PUBLIC_APP_URL="https://shoplens-6st8.vercel.app"
 GEMINI_API_KEY="your_google_gemini_api_key"
 TAVILY_API_KEY="your_tavily_search_api_key"
 NEXT_PUBLIC_SUPABASE_URL="https://your-supabase-project.supabase.co"
@@ -119,7 +120,7 @@ NEXT_PUBLIC_SUPABASE_ANON_KEY="your_supabase_anon_key"
 ```bash
 npm run dev
 ```
-Open https://shoplens-6st8.vercel.app/ with your browser to see the result.
+Open [https://shoplens-6st8.vercel.app/](https://shoplens-6st8.vercel.app/) with your browser to view the live deployment (or run locally at `http://localhost:3000`).
 
 ---
 

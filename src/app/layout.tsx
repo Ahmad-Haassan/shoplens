@@ -10,6 +10,7 @@ const inter = Inter({
 })
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://shoplens-6st8.vercel.app'),
   title: 'ShopLens AI | Shop Smarter. Pay Less.',
   description: 'Compare prices, analyze reviews, and make smarter purchasing decisions across all Pakistani stores.',
 }

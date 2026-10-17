@@ -1,6 +1,8 @@
 {
-  "name": "shoplens..pak",
+  "name": "shoplens-pak",
   "version": "0.1.0",
+  "description": "AI-powered e-commerce price comparison and review analysis engine for Pakistani stores",
+  "homepage": "https://shoplens-6st8.vercel.app",
   "private": true,
   "scripts": {
     "dev": "next dev",
