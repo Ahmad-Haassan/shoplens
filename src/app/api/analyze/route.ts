@@ -19,7 +19,7 @@ const AnalyzeSchema = z.object({
 
 export async function POST(request: Request) {
   try {
-    const supabase = createClient();
+    const supabase = await createClient();
     const { data: { user } } = await supabase.auth.getUser();
 
     // ── Rate Limiting (5 requests for guest, 10 for logged-in per minute) ──

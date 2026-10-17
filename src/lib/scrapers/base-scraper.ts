@@ -1,4 +1,4 @@
-import { ProductData, Scraper } from '@/types';
+export type { ProductData, Scraper } from '@/types';
 
 export function extractTitleFromUrl(url: string): string {
   try {
