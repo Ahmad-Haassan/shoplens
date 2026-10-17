@@ -128,7 +128,7 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 - **Live Demo**: [shoplens-6st8.vercel.app](https://shoplens-6st8.vercel.app/)
 - **Developer**: Ahmad Hassan
 - **GitHub**: [@Ahmad-Haassan](https://github.com/Ahmad-Haassan)
-- **Email**: [ahmad.hassan.dev@gmail.com](mailto:ahmad.hassan.dev@gmail.com)
+- **Email**: [ahmad5712126@gmail.com](mailto:ahmad5712126@gmail.com)
 
 ---
 
