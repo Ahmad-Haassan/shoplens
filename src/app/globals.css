@@ -8,24 +8,37 @@
   /* Warm Premium Aesthetic */
   --bg-color: #F5F1E8;
   --card-bg: #FFF9F2;
-  --card-border: rgba(111, 78, 55, 0.1);
+  --dashboard-card: #FFFFFF;
+  --sidebar-bg: #EFE9DD;
+  --card-border: rgba(111, 78, 55, 0.12);
   --primary: #6F4E37;
   --primary-hover: #5A3E2A;
   --text-main: #2B2B2B;
   --text-muted: #6D6D6D;
   --border-light: rgba(111, 78, 55, 0.15);
-  --success: #4CAF50;
+  --success: #10B981;
+  --accent-gold: #C29B68;
+  --accent-coffee: #6F4E37;
+  --active-pill: rgba(111, 78, 55, 0.08);
+  --active-border: #6F4E37;
 }
 
 .dark {
   --bg-color: #1A1817;
   --card-bg: #23201F;
-  --card-border: rgba(210, 180, 140, 0.1);
+  --dashboard-card: #201D1C;
+  --sidebar-bg: #1B1817;
+  --card-border: rgba(210, 180, 140, 0.12);
   --primary: #D2B48C;
   --primary-hover: #E3CDB0;
   --text-main: #F5F1E8;
   --text-muted: #A3A3A3;
   --border-light: rgba(210, 180, 140, 0.15);
+  --success: #34D399;
+  --accent-gold: #D2B48C;
+  --accent-coffee: #6F4E37;
+  --active-pill: rgba(210, 180, 140, 0.12);
+  --active-border: #D2B48C;
 }
 
 body {
@@ -121,3 +134,38 @@ body {
   animation: shimmer 1.5s infinite;
   border-radius: 8px;
 }
+
+/* Dashboard Glows & Accents */
+.glow-emerald-card {
+  border-color: rgba(16, 185, 129, 0.6) !important;
+  box-shadow: 0 0 25px -4px rgba(16, 185, 129, 0.25), inset 0 0 15px -4px rgba(16, 185, 129, 0.1);
+}
+
+.glow-sentiment-pill {
+  box-shadow: 0 0 30px -4px rgba(16, 185, 129, 0.4), inset 0 0 10px 0 rgba(16, 185, 129, 0.15);
+}
+
+.glow-price-dot {
+  filter: drop-shadow(0 0 6px rgba(34, 211, 238, 0.9));
+}
+
+.glow-sidebar-active {
+  box-shadow: 0 0 16px -2px rgba(16, 185, 129, 0.25);
+}
+
+/* Custom subtle scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--card-border);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--text-muted);
+}
+
