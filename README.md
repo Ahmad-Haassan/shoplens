@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🛍️ ShopLens AI — Multi-Store Price Comparison Engine
+# ShopLens AI — Multi-Store Price Comparison Engine
 ### *Intelligent Deal Discovery, Price Normalization & Review Sentiment Consensus*
 
 [![Live Demo](https://img.shields.io/badge/Live_Demo-shoplens--6st8.vercel.app-black?style=for-the-badge&logo=vercel&logoColor=white)](https://shoplens-6st8.vercel.app/)
@@ -13,12 +13,12 @@
 <br />
 
 <p align="center">
-  <b>ShopLens AI</b> is an intelligent e-commerce comparison engine and sentiment consensus platform. Simply paste any product URL or search query to normalize real-time pricing across major retailers (Daraz, Telemart, Symbios, Shopify stores, and OLX), extract verified specs, analyze customer reviews with Gemini AI, and find the absolute best deal.
+  <b>ShopLens AI</b> is an e-commerce comparison engine and sentiment consensus platform. Simply paste any product URL or search query to normalize real-time pricing across major retailers (Daraz, Telemart, Symbios, Shopify stores and OLX), extract verified specs, analyze customer reviews with Gemini AI and find the best deal.
 </p>
 
-### 🌐 [**Visit Live Application: shoplens-6st8.vercel.app**](https://shoplens-6st8.vercel.app/)
+### [**Visit Live Application: shoplens-6st8.vercel.app**](https://shoplens-6st8.vercel.app/)
 
-[**Explore Features**](#-key-features) • [**Architecture**](#-system-architecture) • [**Setup Guide**](#-getting-started) • [**Report Bug**](https://github.com/Ahmad-Haassan/shoplens/issues)
+[**Explore Features**](#key-features) • [**Architecture**](#system-architecture) • [**Setup Guide**](#getting-started) • [**Report Bug**](https://github.com/Ahmad-Haassan/shoplens/issues)
 
 <br />
 
@@ -27,7 +27,7 @@
 <p align="center"><i>Featuring sleek Dark & Light modes with dynamic theme switching</i></p>
 
 <details>
-<summary><b>🌙 View Dark Mode Preview</b></summary>
+<summary><b>View Dark Mode Preview</b></summary>
 <br />
 
 ![ShopLens AI Dark Mode](./docs/shoplens_preview_dark.png)
@@ -38,20 +38,20 @@
 
 ---
 
-## 🌟 Key Features
+## Key Features
 
-### 1. 🔍 Cross-Platform Price Comparison
-* **Multi-Store Crawlers**: Simultaneously scrapes and normalizes pricing, availability, and product specs across Daraz, Telemart, Symbios, Shopify stores, and local marketplaces.
-* **Smart Model Matching**: Accurately matches variant differences, storage options, and model identifiers to guarantee apples-to-apples comparisons.
-* **Best Deal Highlighting**: Automatically calculates savings, detects price anomalies, and ranks top-value offers with direct purchase links.
+### 1. Cross-Platform Price Comparison
+* **Multi-Store Crawlers**: Simultaneously scrapes and normalizes pricing, availability and product specs across Daraz, Telemart, Symbios, Shopify stores and local marketplaces.
+* **Smart Model Matching**: Accurately matches variant differences, storage options and model identifiers to guarantee apples-to-apples comparisons.
+* **Best Deal Highlighting**: Automatically calculates savings, detects price anomalies and ranks top-value offers with direct purchase links.
 * **Budget Filtering**: Built-in Min/Max price filters to narrow down deals within your exact spending threshold.
 
-### 2. 🧠 AI-Powered Review Consensus & Sentiment
+### 2. AI-Powered Review Consensus & Sentiment
 * **Gemini AI Review Engine**: Ingests customer feedback and aggregates it into a structured sentiment score (0–10) with verified pros & cons.
 * **Fake Review Detection**: Filters out spammy or non-genuine feedback to give shoppers authentic purchase confidence.
 * **Executive Summary**: Generates a quick verdict so buyers don't have to scroll through hundreds of user comments.
 
-### 3. ⚡ Modern & Intuitive Experience
+### 3. Modern & Intuitive Experience
 * **Light / Dark Mode**: Fluid theme toggle tailored with warm modern aesthetic design tokens.
 * **Instant History & Search Tracking**: Keeps track of recently analyzed products locally and in Supabase.
 * **Responsive Next.js 16 App Router**: Ultra-fast SSR and Edge-ready API route execution.
